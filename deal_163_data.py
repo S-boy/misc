@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : 2016-09-05 11:11:52
 # @Author  : K3vi (k3vi@atksec.com)
