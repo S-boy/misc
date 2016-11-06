@@ -28,10 +28,9 @@ def dealData(l):
     f = open(l, 'rb')
     r = open('163mail3.txt', 'a+')
     lines = f.readlines()
-    err_t = open('err.txt','a+')
     for line in lines:
         if errNum == 500:
-            os.system("echo %s异常结束 >> 1.txt" % l)
+            os.system("echo %s异常结束 >> err.txt" % l)
             break
         if line.strip() == "":
             continue
@@ -65,5 +64,6 @@ def deal(fileName, l):
 
 
 if __name__ == '__main__':
-    fileName = getFileName('./163mail3/')
-    deal(fileName, './163mail3/')
+    name = '163mail3'
+    fileName = getFileName('./%s/'% name)
+    deal(fileName, './%s/'% name)
